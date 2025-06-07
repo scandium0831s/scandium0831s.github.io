@@ -253,3 +253,49 @@ footer {
         margin-bottom: 20px;
     }
 }
+/* 作品カテゴリーのセクション */
+.projects-category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px; /* カテゴリ間の余白 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 少し立体感を出す */
+}
+
+.projects-category h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3498db; /* カテゴリ名の下線 */
+    display: inline-block; /* 下線の幅を文字に合わせる */
+    padding-left: 20px; /* 下線と文字のバランス調整 */
+    padding-right: 20px;
+}
+
+/* （既存の .project-grid, .project-item, .project-thumbnail, .project-links, .button-secondary のスタイルはそのまま活用） */
+/* 必要であれば、.project-item の影を少し濃くするなど、微調整してください */
+.project-item {
+    /* 既存のスタイルに加えて */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 影を強めて見やすく */
+    transition: transform 0.2s ease-in-out; /* ホバーアニメーション */
+}
+.project-item:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮き上がる */
+}
+
+/* スマートフォン表示での調整（既存の @media (max-width: 768px) に追加） */
+@media (max-width: 768px) {
+    .projects-category {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .projects-category h3 {
+        font-size: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
