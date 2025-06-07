@@ -3,47 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>〇〇 企画ポートフォリオ</title>
+    <title>杉本大河 ゲーム企画ポートフォリオ</title>
     <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">私について</a></li>
-                <li><a href="#projects">作品</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="site-title">杉本大河のゲーム企画ポートフォリオ</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">私について</a></li>
+                    <li><a href="#projects">作品</a></li>
+                    <li><a href="#skills">スキル</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>〇〇のゲーム企画ポートフォリオ</h1>
-            <p>ゲームで人々の心を動かす企画を届けたい</p>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>ゲームで人々の心を動かし、新しいエンターテインメントを創造したい</h2>
+                <p>ゲーム企画職として、ユーザーに忘れられない体験と感動を届けます。</p>
+                <a href="#projects" class="button-primary">私の作品を見る</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>私について</h2>
-            </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>私について</h2>
+                <div class="about-content">
+                    <img src="images/your_photo.jpg" alt="杉本大河のプロフィール写真" class="profile-photo">
+                    <div class="about-text">
+                        <h3>杉本 大河 (Sugimoto Taiga)</h3>
+                        <p>
+                            **【ここに自己紹介文を記述】**<br>
+                            例：〇〇大学〇〇学部を卒業後、ゲーム業界への強い憧れからゲーム企画職を目指しています。幼い頃からゲームに熱中し、特に〇〇ジャンルや〇〇のゲームに深く影響を受けてきました。ゲームの持つ「人を惹きつけ、感動させる力」に魅了され、自らもそのような体験を生み出したいと考えています。
+                        </p>
+                        <p>
+                            **【あなたの強み・特徴】**<br>
+                            例：私の強みは、ユーザー視点に立った課題発見と、それを解決するための論理的な企画立案力です。また、チームでの共同作業を円滑に進めるコミュニケーション能力や、新しい知識を積極的に吸収し、実践していく行動力も持ち合わせています。
+                        </p>
+                        <p>
+                            **【ゲームへの情熱や目指すもの】**<br>
+                            例：将来的には、〇〇のような「ユーザーの記憶に残る」ゲーム、あるいは「社会に良い影響を与える」ゲームの企画に携わりたいと考えています。未経験ではありますが、これまでの経験と培った情熱を武器に、貴社でいち早く貢献できるよう、日々学習を重ねてまいります。
+                        </p>
+                        <ul>
+                            <li>**出身地:** 【例：神奈川県横浜市】</li>
+                            <li>**最終学歴:** 【例：〇〇大学 〇〇学部 〇〇学科 卒業】</li>
+                            <li>**趣味:** 【例：RPGゲームのやり込み、ボードゲーム、小説執筆、映画鑑賞】</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="projects">
-            <h2>作品</h2>
-            </section>
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>作品</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="images/project1_thumbnail.png" alt="作品1のサムネイル" class="project-thumbnail">
+                        <h3>プロジェクト名：【〇〇プロジェクト】</h3>
+                        <p class="project-concept">**【コンセプトの概要を簡潔に】**</p>
+                        <p>
+                            **【ここに作品の詳細を記述】**<br>
+                            例：この企画は「〇〇なユーザーに、〇〇な体験を提供する」ことを目的としたスマートフォン向け〇〇RPGです。ユーザーが〇〇という課題に直面した際に、〇〇という独自システムで解決する面白さを追求しました。
+                        </p>
+                        <ul>
+                            <li>**ジャンル:** 【例：スマートフォン向けRPG】</li>
+                            <li>**ターゲット:** 【例：〇〇代後半～〇〇代前半のライトユーザー】</li>
+                            <li>**特徴システム:** 【例：独自の「〇〇バトルシステム」、ユーザー共創型コンテンツ】</li>
+                            <li>**開発期間/体制:** 【例：個人制作、〇ヶ月 / チーム制作、〇名（リーダー）】</li>
+                            <li>**役割:** 【例：企画立案、仕様書作成、レベルデザイン、UI/UX設計、バランス調整】</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="projects/project1_detail.html" class="button-secondary">詳細を見る</a>
+                            </div>
+                    </div>
 
-        <section id="skills">
-            <h2>スキル</h2>
-            </section>
+                    <div class="project-item">
+                        <img src="images/project2_thumbnail.png" alt="作品2のサムネイル" class="project-thumbnail">
+                        <h3>プロジェクト名：【△△プロジェクト】</h3>
+                        <p class="project-concept">**【コンセプトの概要を簡潔に】**</p>
+                        <p>
+                            **【ここに作品の詳細を記述】**<br>
+                            例：これは、PC向けのアクションゲーム「△△」の新規イベント企画です。既存ユーザーのエンゲージメント向上と新規ユーザー獲得を目的とし、〇〇な課題に対し、〇〇というイベントシステムでアプローチしました。
+                        </p>
+                        <ul>
+                            <li>**ジャンル:** 【例：PC向けアクションゲーム（イベント企画）】</li>
+                            <li>**ターゲット:** 【例：既存のコアユーザー、新規参入者】</li>
+                            <li>**特徴/目的:** 【例：〇〇を導入したタイムアタックイベント、コミュニティ活性化】</li>
+                            <li>**開発期間/体制:** 【例：チーム制作、〇ヶ月（企画担当）】</li>
+                            <li>**役割:** 【例：イベント企画立案、バランス調整、イベント演出案、テストプレイ分析】</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="projects/project2_detail.html" class="button-secondary">詳細を見る</a>
+                        </div>
+                    </div>
 
-        <section id="contact">
-            <h2>お問い合わせ</h2>
-            </section>
+                    </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>スキル</h2>
+                <div class="skills-category">
+                    <h3>企画・思考力</h3>
+                    <ul>
+                        <li>論理的思考力: 複雑な問題を分解し、構造化して考えることができます。</li>
+                        <li>課題発見・解決力: ユーザーニーズや市場の動向から課題を見つけ出し、具体的な解決策を立案します。</li>
+                        <li>データ分析力: Excelなどを活用し、KPI分析やユーザー行動分析を行うことができます。</li>
+                        <li>発想力: 既存の枠にとらわれず、新しいゲーム体験やシステムを考案します。</li>
+                        <li>プレゼンテーション能力: 企画の意図や魅力を明確に伝え、関係者と合意形成を図ります。</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>使用ツール・知識</h3>
+                    <ul>
+                        <li>**オフィスツール:** Microsoft Office (Excel, PowerPoint, Word), Google Workspace (Docs, Sheets, Slides) - **【具体的な経験レベル】**</li>
+                        <li>**ゲーム開発関連:** Unity (基本的な操作経験、GDC参加)、Unreal Engine (学習中) - **【経験レベルを具体的に】**</li>
+                        <li>**デザイン・プロトタイプ:** Figma (ワイヤーフレーム作成経験)、Adobe XD (学習中) - **【経験レベルを具体的に】**</li>
+                        <li>**その他:** Git/GitHub (基本的なバージョン管理の知識)、Redmine/Trello (タスク管理経験)</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>その他強み</h3>
+                    <ul>
+                        <li>学習意欲: 新しい技術や知識を積極的に学び、アウトプットに繋げることができます。</li>
+                        <li>コミュニケーション能力: チームメンバーや関係者と円滑なコミュニケーションを築き、協調して目標達成に貢献します。</li>
+                        <li>ゲームへの深い理解: 〇〇ジャンルのゲームには特に深い知識と経験があります。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>ゲーム企画職として、貴社の新しい価値創造に貢献したいと考えております。</p>
+                <p>ご質問やご興味をお持ちいただけましたら、お気軽にご連絡ください。</p>
+                <p class="contact-info">
+                    **メールアドレス:** <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+                    </p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 〇〇</p>
+        <div class="container">
+            <p>&copy; 2025 杉本大河 All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script> </body>
+    </body>
 </html>

@@ -1,0 +1,255 @@
+/* css/style.css */
+
+/* 全体の基本設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォントがあれば設定 */
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #2c3e50; /* 濃い青系の色 */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #3498db; /* ホバー時の色 */
+}
+
+/* ヒーローセクション */
+.hero-section {
+    background-color: #3498db; /* 明るい青系の色 */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button-primary {
+    display: inline-block;
+    background-color: #e74c3c; /* 赤系の色 */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #c0392b;
+}
+
+/* 各セクション共通スタイル */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* 私についてセクション */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* スマホ表示で折り返す */
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* 縮まないように */
+}
+
+.about-text {
+    flex-grow: 1;
+}
+
+.about-text h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+/* 作品セクション */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* レスポンシブ対応 */
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+.project-concept {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    margin: 5px;
+}
+
+.button-secondary {
+    display: inline-block;
+    background-color: #2ecc71; /* 緑系の色 */
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #27ae60;
+}
+
+/* スキルセクション */
+.skills-category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-category h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category li {
+    margin-bottom: 8px;
+}
+
+/* お問い合わせセクション */
+.contact-section {
+    text-align: center;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* レスポンシブ対応（簡易版） */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .site-title {
+        font-size: 1.8em;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+}
